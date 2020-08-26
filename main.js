@@ -22,7 +22,7 @@ $(document).ready(function() {
     let submission = new Date(2020, 7, 29, 12, 00);
     let deadline = new Date(2020, 7, 31, 11, 59);
           
-        if (name ==null || name ==" "){  
+        if (input == null || input ==" "){  
           alert("Fill in all fields");  
           
         }
