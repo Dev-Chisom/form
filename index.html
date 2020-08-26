@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <div class="center">
+    <form action="/action_page.php" name="myform" style="border:1px solid #ccc" onsubmit="return validateform(); alert('Thank you for your feedback.');">
+        <div class="container">
+          <h1 style="text-align: center">REGISTRATION FORM</h1>
+          <p style="text-align: center">Please fill in this form to register.</p>
+          <hr>
+
+          <label for="name"><b>First Name:</b></label>
+          <input type="text" placeholder="Enter Your First Name" name="text" autocapitalize="word"  required>
+
+          <label for="name"><b>Last Name</b></label>
+          <input type="text" placeholder="Enter Your Last Name" name="text" autocapitalize="word"  required>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder= "me@example.org" name="email" required>
+
+          <label for="number"><b>Phone Number</b></label>
+          <input type="number" placeholder="Enter Your Phone Number" name="number" id="number" required>
+      
+          <label for="date"><b>Date Of Birth:</b></label>
+          <input id="date" name="date" type="datetime-local" required>
+
+          <div data-toggle-group="location">
+            <div class="form-group">
+             <label for="text"><b>Nationality</b></label>
+              <select class="form-control" name="country" id="country" data-toggle="country" data-country="" required></select>
+            </div>
+            <div class="form-group">
+              <label><b>State Of Origin</b></label>
+              <select class="form-control" name="state" id="state" data-toggle="state" data-state="" required></select>
+            </div>
+          </div>     
+          
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+    
+  
+
+    <script type="text/javascript" src="https://www.cssscript.com/demo/generic-country-state-dropdown-list-countries-js/countries.js"></script>
+    <script src="main.js"></script>
+  
+</body>
+</html>
