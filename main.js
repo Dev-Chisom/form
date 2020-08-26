@@ -22,11 +22,7 @@ $(document).ready(function() {
     let today = new Date();
     let submission = new Date(2020, 7, 29, 12, 00);
     let deadline = new Date(2020, 7, 31, 11, 59);
-          
-        if ( name == null || name ==" " ){  
-          alert("Fill in all fields correctly");  
-          
-        }
+        
 
         if (today <= submission && today <= deadline) {
           alert('Registration successful.');
